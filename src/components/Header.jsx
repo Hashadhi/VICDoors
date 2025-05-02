@@ -1,13 +1,46 @@
-import React from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import "../styles/HeaderStyle.css";
 import {Container, Nav, Navbar} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import Logo from '../assets/logo_.png';
 
-function Header() {
+const Header = () => {
+
+  const [nav, setNav] = useState(false);
+  const prevScrollPos = useRef(window.pageYOffset);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.pageYOffset;
+      const difference = prevScrollPos.current - currentScrollPos;
+      difference > 0.8 ? setNav(true) : setNav(false);
+      prevScrollPos.current = currentScrollPos;
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+
+
+// scroll Navbar
+// const changeValueOnScroll = () => {
+  // const scrollValue = document?.documentElement?.scrollTop;
+  // scrollValue > 100 ? setNav(true) : setNav(false);
+
+  
+// }
+
+
+
+// window.addEventListener("scroll", changeValueOnScroll);
+
+
+
   return (
-    <div className='header'>
-     <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
+    <header >
+     <Navbar collapseOnSelect expand="lg" className={`${nav === true? "sticky" : "hidden"}`}>
       <Container>
         <Navbar.Brand>
             <Link to="/" className='logo'>
@@ -26,7 +59,7 @@ function Header() {
         </Navbar.Collapse>
       </Container>
     </Navbar>
-  </div>
+  </header>
   );
 };
 

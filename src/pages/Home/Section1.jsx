@@ -16,7 +16,7 @@ function Section1() {
                 <Col lg={5}>
                     <div className="hero-text text-center">
                         <h1 className='text-white'>Door Name</h1>
-                        <h2 className='text-white>'>Aluminium</h2>
+                        <h2 className='text-white'>Aluminium</h2>
                         <p className='text-white pt-2 pb-4'>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, ut nesciunt saepe voluptas blanditiis suscipit quaerat vel possimus voluptate atque inventore dolorem ab facilis optio perferendis. Ad dignissimos suscipit commodi.
                         </p>
