@@ -29,7 +29,67 @@
 }
 
 
+/* Home About 2.0 */
+.about-section {
+    padding-top: 80px;
+    padding-bottom: 300px;
+    background: url("../assets/about_background.jpg") no-repeat center center;
+    background-size: cover;
+    width: 100%;
+}
+
+.about-section h2 {
+    font-size: 3.5rem;
+    color: var(--white);
+}
+
+.about-section p {
+    color: var(--white);
+    padding: 20px 30px;
+    font-size: 16px;
+}
+
+.about-wrapper {
+    background: var(--yellow);
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+
+.about-box .about-icon img {
+    max-width: 25%;
+}
+
+.about-box h4 {
+    font-size: 26px;
+    line-height: 1;
+    letter-spacing: 0.5008px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.about-box p {
+    padding: 0 20px;
+}
+
+
 /* Media Query Mobiles */
+
+@media (max-width: 992px) {
+    /* Home About 2.0 */
+
+    .about-section h2 {
+        font-size: 2.5rem;
+    }
+
+    .about-section p {
+        padding: 20px 0;
+    }
+
+    .about-box p {
+        padding: 0;
+    }
+
+}
 
 @media (max-width: 1200px) {
     .hero-section .hero-text h1 {
