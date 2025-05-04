@@ -15,11 +15,11 @@ function Cards({image, title, paragraph}) {
 
                 <div className="d-flex align-items-center justify-content-between">
                     <div className="whitelist">
-                        <i class="bi bi-heart"></i>
+                        <i className="bi bi-heart-fill"></i>
                     </div>
                     <div className="view-more">
                         <Link to="/"> View More  
-                        <i class="bi bi-chevron-right"></i>
+                        <i className="bi bi-chevron-double-right"></i>
                         </Link>
                     </div>
                 </div>

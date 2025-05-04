@@ -71,12 +71,12 @@ const collection = [
 
 const Section3 = () => {
   return (
-    <section className='menu'>
+    <section className='menu-section'>
         <Container>
             <Row>
                 <Col lg={{span: 8, offset: 2}} className="text-center mb-2 pt-5">
                     <h2>Our Collection</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos maxime, alias excepturi fugiat aliquid laboriosam nisi quas ul
+                    <p className='para'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos maxime, alias excepturi fugiat aliquid laboriosam nisi quas ul
                     </p>
                 </Col>
             </Row>

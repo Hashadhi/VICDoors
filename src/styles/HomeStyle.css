@@ -71,6 +71,88 @@
     padding: 0 20px;
 }
 
+/* Home Menu Section */
+
+.menu-section {
+    padding-top: 40px;
+    padding-bottom: 60px;
+    background: url('../assets/menu_section_background.jpg');
+}
+
+.menu-section .card-img-top {
+    transition: all 500ms ease-in-out;
+}
+
+.menu-section .card:hover .card-img-top {
+    transform: scale(1.1);
+}
+
+.menu-section h2 {
+    font-size: 3.5rem;
+    color: var(--white);
+}
+
+.menu-section .para {
+    color: var(--white);
+    padding: 10px 100px;
+    font-size: 19px;
+}
+
+.menu-section .card-title {
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.menu-section .card-text {
+    color: #383838;
+    font-size: 15px;
+}
+
+.menu-section .whitelist i {
+    color: #cbcbcb;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.menu-section .whitelist i:hover {
+    color: #D46083;
+    transition: all 250ms ease-in-out;
+}
+
+.menu-section .view-more a {
+    display: inline-block;
+    font-size: 1rem;
+    line-height: 1;
+    font-weight: 350;
+    padding: 8px 5px;
+    font-size: 15px;
+}
+
+.menu-section .view-more i {
+    padding-left: 2px;
+    font-weight: 5000;
+}
+
+/* .menu-section .view-more a:hover {
+    color: black;
+    font-weight: 450;
+    transition: all 250ms ease-in-out;
+}
+
+.menu-section .view-more i:hover {
+    color: red;
+    font-weight: 800;
+    transition: all 250ms ease-in-out;
+} */
+
+.menu-section .view-more:hover {
+    a, i {
+        font-weight: 450;
+        transition: all 250ms ease-in-out;
+    }
+}
+
 
 /* Media Query Mobiles */
 
