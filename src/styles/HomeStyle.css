@@ -95,7 +95,7 @@
 .menu-section .para {
     color: var(--white);
     padding: 10px 100px;
-    font-size: 19px;
+    font-size: 17px;
 }
 
 .menu-section .card-title {
@@ -134,18 +134,6 @@
     font-weight: 5000;
 }
 
-/* .menu-section .view-more a:hover {
-    color: black;
-    font-weight: 450;
-    transition: all 250ms ease-in-out;
-}
-
-.menu-section .view-more i:hover {
-    color: red;
-    font-weight: 800;
-    transition: all 250ms ease-in-out;
-} */
-
 .menu-section .view-more:hover {
     a, i {
         font-weight: 450;
@@ -173,8 +161,19 @@
 
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 767px) {
     .hero-section .hero-text h1 {
         font-size: 5.5rem;
+    }
+
+    /* Home Menu 3.0 */
+
+    .menu-section h2 {
+        font-size: 2.5rem;
+    }
+
+    .menu-section .para {
+        padding: 10px 0;
+        font-size: 14px;
     }
 }
