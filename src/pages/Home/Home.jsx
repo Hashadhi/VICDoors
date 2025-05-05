@@ -4,6 +4,8 @@ import "../../styles/HomeStyle.css";
 import Section1 from './Section1';
 import Section2 from './Section2';
 import Section3 from './Section3';
+import Section4 from './Section4';
+import Section5 from './Section5';
 
 function Home() {
   return (
@@ -17,6 +19,11 @@ function Home() {
 
         {/* Home Section 3 Menu */}
         <Section3 />
+
+        {/* BG Parallax Scroll */}
+        <Section4 />
+
+        <Section5 />
         
 
     </Layout>
