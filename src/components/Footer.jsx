@@ -1,18 +1,39 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 
 function Footer() {
+
+  const [isVisible, setIsVisible] = useState(false);
+
+  const scrollTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
+
+  const listenToScroll = () => {
+    const heightToHidden = 250;
+    const windowScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    windowScroll > heightToHidden ? setIsVisible(true) : setIsVisible(false);
+
+  }
+
+  useEffect(() => {
+    window.addEventListener("scroll", listenToScroll)
+  });
+
   return (
-    <footer>
+    <>
+      <footer>
       <Container>
         <Row>
           <Col sm={6} lg={3} className='mb-4 mb-lg-0'>
             <div className="text-center">
               <h5>Location</h5>
               <p>2 Middlin Street</p>
-              <p>Brown Hill</p>
-              <p>Victoria</p>
+              <p>Brown Hill, Victoria</p>
               <p>Australia</p>
             </div>
           </Col>
@@ -61,6 +82,14 @@ function Footer() {
         </Row>
       </Container>
     </footer>
+
+    {/* Scroll To Top */}
+
+    {isVisible && <div className='scroll-top' onClick={scrollTop}>
+      <i className="bi bi-arrow-up"></i>
+    </div> }
+    
+    </>
   )
 }
 
