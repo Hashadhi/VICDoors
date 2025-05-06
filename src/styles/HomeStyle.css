@@ -171,7 +171,48 @@
     left: unset;
 }
 
+/* Home Contact 6.0 */
+.contact-section {
+    background: url('../assets/contact_background.avif') no-repeat center center;
+    background-size: cover;
+    padding: 100px;
+}
+
+.contact-section h4 {
+    font-size: 2.375rem;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.contact-section h2 {
+    font-size: 4.5rem;
+    margin-bottom: 25px;
+}
+
+.contact-section p {
+    width: 70%;
+    margin: 0 auto 30px;
+}
+
+.contact-section a {
+    font-size: 22px;
+    font-weight: 700;
+}
+
 /* Media Query Mobiles */
+
+@media (max-width: 1200px) {
+
+    /* Home Contact 6.0 */
+    .contact-section h2 {
+        font-size: 3.5rem;
+    }
+
+    .contact-section p {
+        width: 100%;
+    }
+
+}
 
 @media (max-width: 992px) {
     /* Home About 2.0 */
