@@ -1,9 +1,10 @@
 /* Home Hero 1.0 */
 .hero-section {
     position: relative;
-    background: url('../assets/hreo_background.jpg') no-repeat center center;
+    /* background: url('../assets/hreo_background.jpg') no-repeat center center;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: fixed; */
+    background-color:#60463F;
     padding-top: 170px;
     padding-bottom: 90px;
 }
@@ -14,6 +15,7 @@
     line-height: 1;
     margin-bottom: 15px;
     letter-spacing: 3px;
+    color: #60463F;
 }
 
 .hero-section .hero-text h2 {
@@ -22,6 +24,7 @@
     line-height: 1;
     margin-bottom: 20px;
     letter-spacing: 3px;
+    color: #9A7763;
 }
 
 .hero-section .hero-text p {
@@ -198,6 +201,68 @@
     font-size: 22px;
     font-weight: 700;
 }
+
+/* Home Footer 7.0 */
+footer {
+    padding-top: 80px;
+}
+
+footer h5 {
+    color: var(--light-black);
+    line-height: 1;
+    margin-bottom: 25px;
+}
+
+footer p {
+    margin-bottom: 3px;
+    font-size: 1rem;
+}
+
+footer .calling {
+    font-size: 1.02rem;
+    font-weight: 500;
+    color: var(--yellow);
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 20px;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+footer .copy-right {
+    border-top: 1px solid var(--light-grey-2);
+    margin-top: 60px;
+    padding: 20px 0;
+}
+
+footer .copy-right ul li span {
+    color: var(--light-red);
+    font-weight: 600;
+}
+
+footer .copy-right ul li {
+    font-size: 1rem;
+    padding: 0 10px;
+    position: relative;
+}
+
+footer .copy-right ul li:after {
+    content: '|';
+    padding-left: 11px;
+    position: absolute;
+    top: -4px;
+    right:-10px;
+}
+
+footer .copy-right ul li:last-child:after {
+    display: none;
+}
+
+
+
+
 
 /* Media Query Mobiles */
 
